@@ -2,16 +2,18 @@
   "name": "speak-tip",
   "version": "1.0.0",
   "description": "Projeto speak tip",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev"
   },
-  "author": "",
+  "author": "arneto",
   "license": "MIT",
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
     "next": "^15.5.0",
+    "postcss": "^8.5.6",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@types/node": "24.3.0",
