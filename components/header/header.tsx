@@ -15,18 +15,18 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/historico"
+              href="/noticias"
               className="rounded-md px-3 py-2 font-medium hover:bg-neutral-800 transition-colors duration-300"
             >
-              Histórico
+              Notícias
             </Link>
           </li>
           <li>
             <Link
-              href="/sobre"
+              href="/historico"
               className="rounded-md px-3 py-2 font-medium hover:bg-neutral-800 transition-colors duration-300"
             >
-              Sobre
+              Histórico
             </Link>
           </li>
         </ul>
