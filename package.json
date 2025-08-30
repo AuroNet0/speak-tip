@@ -8,6 +8,7 @@
   "author": "arneto",
   "license": "MIT",
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@tailwindcss/postcss": "^4.1.12",
     "next": "^15.5.0",
     "postcss": "^8.5.6",
