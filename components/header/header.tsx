@@ -1,36 +1,42 @@
+import {
+  ArchiveBoxIcon,
+  HomeIcon,
+  NewspaperIcon,
+} from "@heroicons/react/24/solid";
 import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-neutral-900 text-white py-4 shadow-md shadow-neutral-900/30">
+    <header className="bg-black text-white py-4">
       <nav className="container mx-auto px-4">
         <ul className="flex justify-center space-x-6">
           <li>
             <Link
               href="/"
-              className="rounded-md px-3 py-2 font-medium hover:bg-neutral-800 transition-colors duration-300"
+              className="group inline-flex items-center justify-center px-5 py-2 bg-white text-black rounded-full font-semibold text-base transition-transform hover:scale-105 active:scale-95"
             >
-              Home
+              <HomeIcon className="w-5 h-5 text-black" />
             </Link>
           </li>
           <li>
             <Link
               href="/noticias"
-              className="rounded-md px-3 py-2 font-medium hover:bg-neutral-800 transition-colors duration-300"
+              className="group inline-flex items-center justify-center px-5 py-2 bg-white text-black rounded-full font-semibold text-base transition-transform hover:scale-105 active:scale-95"
             >
-              Notícias
+              <NewspaperIcon className="w-5 h-5 text-black" />
             </Link>
           </li>
           <li>
             <Link
               href="/historico"
-              className="rounded-md px-3 py-2 font-medium hover:bg-neutral-800 transition-colors duration-300"
+              className="group inline-flex items-center justify-center px-5 py-2 bg-white text-black rounded-full font-semibold text-base transition-transform hover:scale-105 active:scale-95"
             >
-              Histórico
+              <ArchiveBoxIcon className="w-5 h-5 text-black" />
             </Link>
           </li>
         </ul>
       </nav>
+      <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
     </header>
   );
 }

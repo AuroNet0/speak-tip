@@ -17,12 +17,24 @@ export default async function Noticias() {
 
   return (
     <main className="p-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
         {noticias.map((news) => (
           <Link href={`/noticias/${news.id}`} key={news.id}>
-            <div key={news.id} className="border rounded-lg p-4 shadow-md">
-              <h2 className="text-xl font-semibold">{news.title}</h2>
-              <p className="text-lg text-gray-600 mt-2"> {news.text}</p>
+            <div
+              className="
+          rounded-lg p-6 h-full
+          bg-white/2
+          border border-white/
+          backdrop-blur-lg 
+          transition-all duration-300 ease-in-out 
+          hover:bg-white/10 hover:-translate-y-2 cursor-pointer
+          flex flex-col
+        "
+            >
+              <h2 className="text-xl font-semibold text-white mb-2">
+                {news.title}
+              </h2>
+              <p className="text-gray-300 mt-2 line-clamp-4">{news.text}</p>
             </div>
           </Link>
         ))}
